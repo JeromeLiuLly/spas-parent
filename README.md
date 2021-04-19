@@ -16,6 +16,14 @@
 ![界面示例](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/master/doc/结果示例.png)
 
 ## 使用示例 
+
+针对可视化配置，需要事先上传json文件到指定目录（in.json、out.json）
+in.json: 源json数据示例
+out.json: 目标json数据示例
+
+
+
+
 ```
 <dependency>
     <groupId>com.candao.spas</groupId>
@@ -23,6 +31,13 @@
     <version>${revision}</version>
 </dependency>
 ```
-JsonCovertUtils.convert(inJson,spec);
+
+## 基于webswing实现swing服务化
+```
+WebSwing官网：https://www.webswing.org/
+war部署：https://storage.googleapis.com/builds.webswing.org/releases/webswing-examples-eval-21.1-distribution.zip
+或者详见 doc/webswing下的目录，有对应压缩包。具体部署和操作，请参考官网即可。
+```
+
 
 
