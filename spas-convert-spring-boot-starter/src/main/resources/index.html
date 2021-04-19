@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,22 +57,17 @@
             $('#btn-json-viewer').click(function() {
                 try {
                     var input = eval('(' + $('#json-input').val() + ')');
-                }
-                catch (error) {
+                } catch (error) {
                     return alert("Cannot eval JSON: " + error);
                 }
-                var options = {
-                    collapsed: $('#collapsed').is(':checked'),
-                    withQuotes: $('#with-quotes').is(':checked')
-                };
+                var options = {};
                 $('#json-renderer').jsonViewer(input, options);
             });
 
             $('#btn-json-viewer-spec').click(function() {
                 try {
                     var input = eval('(' + $('#json-spec').val() + ')');
-                }
-                catch (error) {
+                } catch (error) {
                     return alert("Cannot eval JSON: " + error);
                 }
                 var options = {};
@@ -83,7 +76,6 @@
 
             $('#btn-json-viewer-out').click(function() {
                 try {
-                    //var input = eval('(' + $('#json-spec').val() + ')');
                     var data = {};
                     data.source = $("#json-input").val();
                     data.agreement = $("#json-spec").val();
@@ -107,10 +99,7 @@
                 catch (error) {
                     return alert("Cannot eval JSON: " + error);
                 }
-
             });
-
-            // Display JSON sample on load
         });
         $('#btn-json-viewer').click();
         $('#btn-json-viewer-spec').click();

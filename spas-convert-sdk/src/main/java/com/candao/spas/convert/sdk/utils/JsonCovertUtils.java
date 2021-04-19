@@ -31,6 +31,10 @@ public final class JsonCovertUtils {
         return instance;
     }
 
+    /**
+     * @param sourceJsonData  转换json对象
+     * @param convertProtocol 转换协议
+     * */
     public static Map convert(String sourceJsonData, String convertProtocol){
         if (sourceJsonData == null || convertProtocol == null)
             return null;
