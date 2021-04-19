@@ -125,41 +125,4 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-        <repository>
-            <id>sp-maven-releases</id>
-            <name>sp-maven-releases</name>
-            <url>http://nexus.sp.sizne.net/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>sp-maven-snapshots</id>
-            <name>sp-maven-snapshots</name>
-            <url>http://nexus.sp.sizne.net/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>sp-maven-public</id>
-            <name>central</name>
-            <url>http://nexus.sp.sizne.net/repository/maven-public/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>sp-maven-snapshots</id>
-            <name>central</name>
-            <url>http://nexus.sp.sizne.net/repository/maven-snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-            </snapshots>
-        </repository>
-    </repositories>
 </project>

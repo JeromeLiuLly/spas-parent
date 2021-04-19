@@ -148,59 +148,5 @@
             </plugin>
         </plugins>
     </build>
-    <distributionManagement>
-        <repository>
-            <id>sp-maven-releases</id>
-            <name>sp-maven-releases</name>
-            <url>http://nexus.sp.sizne.net/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
-            <id>sp-maven-snapshots</id>
-            <name>sp-maven-snapshots</name>
-            <url>http://nexus.sp.sizne.net/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>sp-maven-public</id>
-            <name>sp-maven-public</name>
-            <url>http://nexus.sp.sizne.net/repository/maven-public/</url>
-        </repository>
-        <repository>
-            <id>candao-maven</id>
-            <name>central</name>
-            <url>http://qc.can-dao.com:18080/nexus/content/groups/public</url>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-        </repository>
-        <repository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>spring-milestones</id>
-            <name>Spring Milestones</name>
-            <url>https://repo.spring.io/milestone</url>
-        </pluginRepository>
-        <pluginRepository>
-            <id>spring-snapshots</id>
-            <name>Spring Snapshots</name>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
-
 
 </project>
