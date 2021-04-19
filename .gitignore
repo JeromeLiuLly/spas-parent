@@ -1,0 +1,19 @@
+# Created by .ignore support plugin (hsz.mobi)
+*~
+.DS_Store
+*/target/
+.metadata/.plugins/org.eclipse.core.runtime/.settings
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes
+.metadata/.plugins/org.eclipse.pde.core/.cache
+.metadata/.plugins/org.eclipse.jdt.ui
+.metadata/.plugins/org.eclipse.m2e.logback.configuration
+.metadata/.plugins/org.eclipse.jdt.core
+.metadata
+target
+.idea
+.classpath
+.seetings/
+.settings
+.project
+*.iml
+.factorypath

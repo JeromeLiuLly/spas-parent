@@ -1,0 +1,15 @@
+{
+  "name":"userName",
+  "age":"age",
+  "consigneePhones":"phone",
+  "birth,cvt,numToDateStr,yyyy-MM-dd HH:mm:ss":"birthday",
+  "projects":{
+    "*":{
+      "name":"pro.*.project",
+      "teacherId":"pro.*.value"
+    }
+  },
+  "bag": {
+    "*": "back.*.name"
+  }
+}

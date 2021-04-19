@@ -1,0 +1,17 @@
+{
+  "userName": "",
+  "age": "",
+  "phone": "",
+  "birthday": "",
+  "pro": {
+    "*": {
+      "project": "",
+      "value": ""
+    }
+  },
+  "back": {
+    "*": {
+      "name": ""
+    }
+  }
+}

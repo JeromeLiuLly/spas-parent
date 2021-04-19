@@ -1,0 +1,16 @@
+{
+  "userName": "jeromeLiu",
+  "age": 18.0,
+  "phone": "123456789",
+  "birthday": "2021-04-15 11:09:55",
+  "pro": [{
+    "project": "语文",
+    "value": "1140120"
+  }, {
+    "project": "数学",
+    "value": "1140121"
+  }],
+  "back": [{
+    "name": "橡皮擦"
+  }]
+}

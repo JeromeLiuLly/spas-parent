@@ -1,0 +1,17 @@
+{
+  "name":"jeromeLiu",
+  "age":18,
+  "consigneePhones":"123456789",
+  "birth":"1618456195000",
+  "projects":[
+    {
+      "name":"语文",
+      "teacherId":"1140120"
+    },
+    {
+      "name":"数学",
+      "teacherId":"1140121"
+    }
+  ],
+  "bag":["铅笔","课本","橡皮擦"]
+}
