@@ -16,6 +16,13 @@
 ![界面示例](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/master/doc/结果示例.png)
 
 ## 使用示例 
-
+```
+<dependency>
+    <groupId>com.candao.spas</groupId>
+    <artifactId>spas-convert-sdk</artifactId>
+    <version>${revision}</version>
+</dependency>
+```
+JsonCovertUtils.convert(inJson,spec);
 
 
