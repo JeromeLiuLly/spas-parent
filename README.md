@@ -9,6 +9,12 @@
 ## 架构设计和界面
    
 
+可视化界面转换配置
+![实例界面](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/master/doc/实例界面.png)
+
+可视化界面验证结果
+![界面示例](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/master/doc/结果示例.png)
+
 ## 使用示例 
 ![实例界面](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/doc/实例界面.png)
 
