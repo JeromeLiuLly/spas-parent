@@ -31,6 +31,7 @@ spen-out.json: 转换后的对象规则
 进行在线转换验证（spas-convert-spring-boot-starter）
 将in.json、spen-in.json 内容传入指定文本框内
 
+![可视化验证](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/master/doc/可视化验证.gif)
 
 ```
 <dependency>
