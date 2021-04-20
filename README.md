@@ -41,7 +41,7 @@ spen-out.json: 转换后的对象规则
 </dependency>
 ```
 
-## 基于webswing实现swing服务化
+## 基于WebSwing实现swing服务化
 ```
 WebSwing官网：https://www.webswing.org/
 war部署：https://storage.googleapis.com/builds.webswing.org/releases/webswing-examples-eval-21.1-distribution.zip
