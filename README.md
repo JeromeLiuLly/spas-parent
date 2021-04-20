@@ -17,15 +17,19 @@
 
 ## 使用示例 
 
-针对可视化配置，需要事先上传json文件到指定目录（in.json、out.json）
-in.json: 源json数据示例
+针对可视化配置，需要事先上传json文件到指定目录（in.json、out.json）  
+in.json: 源json数据示例  
 out.json: 目标json数据示例
 
 ![生成输出示例](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/master/doc/生成输出示例.png)
-根据以上两个文件,生成两端的转换对象。
+根据以上两个文件,生成两端的转换对象。  
+spen-in.json: 对象转换协议  
+spen-out.json: 转换后的对象规则  
 
-根据
+![操作实例](https://raw.githubusercontent.com/JeromeLiuLly/spas-parent/master/doc/操作实例.gif)
 
+进行在线转换验证（spas-convert-spring-boot-starter）
+将in.json、spen-in.json 内容传入指定文本框内
 
 
 ```
