@@ -44,8 +44,8 @@ public final class JsonCovertUtils {
             return null;
 
         try {
-            JsonObject inObj = getInstance().parse(sourceJsonData).getAsJsonObject();
-            JsonObject specObj = getInstance().parse(convertProtocol).getAsJsonObject();
+            JsonObject inObj = getInstance().parse(sourceJsonData);
+            JsonObject specObj = getInstance().parse(convertProtocol);
             getInstance().transform.loadCfg(specObj);
             JsonElement result = getInstance().transform.convert(inObj);
             return result.toString();
