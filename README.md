@@ -47,6 +47,3 @@ WebSwing官网：https://www.webswing.org/
 war部署：https://storage.googleapis.com/builds.webswing.org/releases/webswing-examples-eval-21.1-distribution.zip
 或者详见 doc/webswing下的目录，有对应压缩包。具体部署和操作，请参考官网即可。
 ```
-
-
-
