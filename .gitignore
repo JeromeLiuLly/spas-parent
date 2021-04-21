@@ -2,6 +2,8 @@
 *~
 .DS_Store
 */target/
+.flattened-pom.xml
+*/.flattened-pom.xml
 .metadata/.plugins/org.eclipse.core.runtime/.settings
 .metadata/.plugins/org.eclipse.core.resources/.root/.indexes
 .metadata/.plugins/org.eclipse.pde.core/.cache
