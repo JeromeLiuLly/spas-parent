@@ -26,7 +26,7 @@ public class JsonConvertController {
             return ResponseData.generateFail("请求参数不能为空");
         }
 
-        Map<?,?> result =  JsonCovertUtils.convert(bean.getSource(),bean.getAgreement());
+        String result =  JsonCovertUtils.convert(bean.getSource(),bean.getAgreement());
 
         return ResponseData.generateSuccess(result);
     }

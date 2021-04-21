@@ -1,19 +1,21 @@
 package com.candao.spas.convert.sdk.utils;
 
 import com.candao.spas.convert.sdk.node.Jsont;
-import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import java.util.Map;
 
 public final class JsonCovertUtils {
 
     private volatile static JsonCovertUtils instance = null;
 
-    private JsonCovertUtils() { this.transform = new Jsont(); }
+    private JsonCovertUtils() {
+        this.transform = new Jsont();
+        this.parser = new JsonParser();
+    }
 
     final Jsont transform;
+    final JsonParser parser;
 
     // java中使用双重检查锁定机制
     public static JsonCovertUtils getInstance() {
@@ -27,20 +29,26 @@ public final class JsonCovertUtils {
         return instance;
     }
 
+    private JsonObject parse(String data){
+        return parser.parse(data).getAsJsonObject();
+    }
+
     /**
      * @param sourceJsonData  转换json对象
      * @param convertProtocol 转换协议
+     *
+     * @return String json数据
      * */
-    public static Map convert(String sourceJsonData, String convertProtocol){
+    public static String convert(String sourceJsonData, String convertProtocol){
         if (sourceJsonData == null || convertProtocol == null)
             return null;
 
         try {
-            JsonObject inObj = new JsonParser().parse(sourceJsonData).getAsJsonObject();
-            JsonObject specObj = new JsonParser().parse(convertProtocol).getAsJsonObject();
+            JsonObject inObj = getInstance().parse(sourceJsonData).getAsJsonObject();
+            JsonObject specObj = getInstance().parse(convertProtocol).getAsJsonObject();
             getInstance().transform.loadCfg(specObj);
             JsonElement result = getInstance().transform.convert(inObj);
-            return new Gson().fromJson(result,Map.class);
+            return result.toString();
         }catch (Exception e){
             e.printStackTrace();
         }

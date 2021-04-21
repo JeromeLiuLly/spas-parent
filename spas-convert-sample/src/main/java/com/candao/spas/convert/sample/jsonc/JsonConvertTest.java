@@ -36,12 +36,11 @@ public class JsonConvertTest {
         
         String spec = "{ \"name\":\"userName\",\"age\":\"age\",\"consigneePhones\":\"phone\",\"birth,cvt,numToDateStr,yyyy-MM-dd HH:mm:ss\":\"birthday\",\"projects\":{\"*\":{\"name\":\"pro.*.project\",\"teacherId\":\"pro.*.value\"}},\"bag\": {\"*\": \"back.*.name\"}}";
 
-
-        Map<?,?> result = JsonCovertUtils.convert(inJson,spec);
+        String result = JsonCovertUtils.convert(inJson,spec);
         
         System.out.println("输入json对象:\n"+new Gson().toJson(student));
         System.out.println("转换协议:\n"+spec);
-        System.out.println("转换后json对象:\n"+new Gson().toJson(result));
+        System.out.println("转换后json对象:\n"+result);
     }
 	
 }
