@@ -89,6 +89,7 @@
                         data:data,
                         success: function(data){
                             var options = {};
+                            $('#json-output').val(JSON.stringify(data.data));
                             $('#json-renderer-out').jsonViewer(data.data, options);
                         },
                         error: function (data) {

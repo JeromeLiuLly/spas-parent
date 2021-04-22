@@ -2,6 +2,7 @@ package com.candao.spas.convert.controller;
 
 import com.candao.spas.convert.sdk.utils.JsonCovertUtils;
 import com.candao.spas.convert.web.ResponseData;
+import com.google.gson.Gson;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.util.StringUtils;
@@ -27,7 +28,7 @@ public class JsonConvertController {
         }
 
         String result =  JsonCovertUtils.convert(bean.getSource(),bean.getAgreement());
-
-        return ResponseData.generateSuccess(result);
+        Map map = new Gson().fromJson(result,Map.class);
+        return ResponseData.generateSuccess(map);
     }
 }
